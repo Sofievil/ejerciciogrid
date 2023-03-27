@@ -1,0 +1,157 @@
+html * {
+box-sizing: border-box;
+}
+
+.superior  > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+@media (min-width: 600px) {
+    .superior {
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr 1fr;
+        grid-template-rows: 1fr 3fr 3fr 1fr;
+    }
+}
+
+.header {
+    background-color: rgb(244, 181, 117);
+    border-style:inset;outline: auto;
+}
+
+@media (min-width: 600px) {
+    .header {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* Anexos */
+.foto1 {
+    background-color: rgb(159, 228, 233);
+}
+
+.foto2 {
+    background-color: rgb(255, 179, 216);
+}
+
+.foto3larga {
+    background-color: rgba(252, 228, 138, 0.841);
+}
+
+.foto4 {
+    background-color: rgb(139, 0, 0);
+}
+
+.foto5 {
+    background-color: rgb(139, 130, 0);
+}
+
+.foto6 {
+    background-color: rgb(167, 59, 206);
+}
+
+.foto7 {
+    background-color: darkcyan;
+}
+
+.foto8 {
+    background-color: rgb(137, 255, 126);
+}
+
+.foto9 {
+    background-color: rgb(59, 153, 241);
+}
+
+.foto10 {
+    background-color: rgb(64, 76, 62);
+}
+
+
+
+
+@media (min-width: 600px) {
+    .foto1 {
+        grid-template-columns: 1 / -1;
+        border-style:inset;outline: auto;
+    }
+}
+
+@media (min-width: 900px) {
+    .foto2 {
+        grid-column-end: auto;
+        grid-row-start:auto;
+        border-style:inset;outline: auto;
+    }
+}
+@media (min-width: 600px) {
+    .foto3larga {
+        grid-row: span 3;
+        border-style:inset;outline: auto;
+    }
+}
+@media (min-width: 600px) {
+    .foto4 {
+        grid-row-start: span 2;
+        border-style:inset;outline: auto; 
+    }
+}
+@media (min-width: 600px) {
+    .foto5 {
+        grid-row-start: auto;
+        border-style:inset;outline: auto;
+    }
+}
+@media (min-width: 600px) {
+    .foto6 {
+        grid-row-start: auto;
+        border-style:inset;outline: auto;
+    }
+}
+@media (min-width: 600px) {
+    .foto7 {
+        grid-row-start: auto;
+        border-style:inset;outline: auto;
+    }
+}
+@media (min-width: 600px) {
+    .foto8 {
+        grid-row-start: auto;
+        border-style:inset;outline: auto; 
+    }
+}
+@media (min-width: 600px) {
+    .foto9 {
+        grid-row-end: span 1;
+        border-style:inset;outline: auto; 
+    }
+}
+@media (min-width: 600px) {
+    .foto10 {
+        grid-row-start: auto; 
+        border-style:inset;outline: auto;
+    }
+}
+
+@media (min-width: 600px) {
+    .foto11 {
+        grid-row-start: auto;
+    }
+}
+
+/* Pie */
+.pie {
+    background-color: black;
+    margin-bottom: 0%;
+    color: rgb(255, 255, 255);
+}
+
+@media (min-width: 600px) {
+    .pie {
+        margin: 0;
+        grid-column: 1 / -1;
+    }
+}
